@@ -34,7 +34,13 @@ List of installed (and required for my code) packages in the tf conda env:
 - [geopandas](https://geopandas.org/en/stable/getting_started/install.html)
 - [xarray](https://docs.xarray.dev/en/stable/getting-started-guide/installing.html#instructions)
 - [rioxarray](https://corteva.github.io/rioxarray/stable/installation.html)
-- [shapely](https://pypi.org/project/Shapely/)(This was installed, I think with geopandas.)
+- [shapely](https://pypi.org/project/Shapely/) (This was installed, I think with geopandas.)
+- [opencv2](https://docs.opencv.org/4.x/d2/de6/tutorial_py_setup_in_ubuntu.html) (Their tutorial didn't work for me,
+  use `conda install -c conda-forge opencv` instead.)
+
+I am currently working on using a kernel to apply the Zipf growth distribution to the image, rather than use an absolute
+distance from centre. OpenCV2's [cv2.filter2D](https://docs.opencv.org/3.4/d4/dbd/tutorial_filter_2d.html) should work well for this.
+
 
 Next step is to apply the [Sobel operator](https://www.youtube.com/watch?v=uihBwtPIBxM) on the older data after retraining my model.\
 The main reason I think it is necessary to retrain the model is because the true positive reading was at the low end of 70% and it will
