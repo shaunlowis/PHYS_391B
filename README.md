@@ -7,3 +7,6 @@ Using this command to install appropriate NVIDIA driver for my rtx3060:\
 
 Apparently the next step is to then go:\
 `sudo prime-select nvidia`
+
+
+Okay so it seems to have worked, now I just need to follow the rest of [this](https://www.tensorflow.org/install/pip) guide.
