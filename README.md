@@ -20,8 +20,18 @@ produces:
 
 now I just need to follow the rest of [this](https://www.tensorflow.org/install/pip) guide.
 According to the guide, there may be some need to use the install link, which is:\
-`https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-2.10.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl`\
+`https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-2.10.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl`
 
-List of installed packages in the tf conda env:
+I used [the following link](https://data.linz.govt.nz/x/vGMekh) to download my data.
+
+List of installed (and required for my code) packages in the tf conda env:
 - Tensorflow
-- Keras
+- Keras (automatically installed with Tensorflow)
+- [pandas](https://pandas.pydata.org/docs/getting_started/install.html)
+- [matplotlib](https://matplotlib.org/stable/users/installing/index.html)
+- [skimage](https://scikit-image.org/docs/stable/install.html#install-via-conda)
+- [patchify](https://pypi.org/project/patchify/) (This was already installed with numpy for me.)
+- [geopandas](https://geopandas.org/en/stable/getting_started/install.html)
+- [xarray](https://docs.xarray.dev/en/stable/getting-started-guide/installing.html#instructions)
+- [rioxarray](https://corteva.github.io/rioxarray/stable/installation.html)
+- [shapely](https://pypi.org/project/Shapely/)(This was installed, I think with geopandas.)
