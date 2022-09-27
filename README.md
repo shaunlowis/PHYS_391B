@@ -35,3 +35,7 @@ List of installed (and required for my code) packages in the tf conda env:
 - [xarray](https://docs.xarray.dev/en/stable/getting-started-guide/installing.html#instructions)
 - [rioxarray](https://corteva.github.io/rioxarray/stable/installation.html)
 - [shapely](https://pypi.org/project/Shapely/)(This was installed, I think with geopandas.)
+
+Next step is to apply the [Sobel operator](https://www.youtube.com/watch?v=uihBwtPIBxM) on the older data after retraining my model.\
+The main reason I think it is necessary to retrain the model is because the true positive reading was at the low end of 70% and it will
+form the basis of all of our investigative work into the growth projection "turing model" which we are developing, so it is probably best to not build on sand if at all avoidable.
