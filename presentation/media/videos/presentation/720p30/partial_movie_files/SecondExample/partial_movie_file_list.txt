@@ -1,0 +1,4 @@
+# This file is used internally by FFMPEG.
+file 'file:/home/shaun/PHYS_391B/presentation/media/videos/presentation/720p30/partial_movie_files/SecondExample/1342159004_4062061451_223132457.mp4'
+file 'file:/home/shaun/PHYS_391B/presentation/media/videos/presentation/720p30/partial_movie_files/SecondExample/1353618911_1419722896_2928827347.mp4'
+file 'file:/home/shaun/PHYS_391B/presentation/media/videos/presentation/720p30/partial_movie_files/SecondExample/1353618911_125286499_772457469.mp4'
