@@ -1,3 +1,4 @@
 # This file is used internally by FFMPEG.
-file 'file:/home/shaun/PHYS_391B/presentation/media/videos/presentation/720p30/partial_movie_files/Zipf/504174481_3691353319_223132457.mp4'
-file 'file:/home/shaun/PHYS_391B/presentation/media/videos/presentation/720p30/partial_movie_files/Zipf/2613842617_125286499_2333644122.mp4'
+file 'file:/home/shaun/PHYS_391B/presentation/media/videos/presentation/720p30/partial_movie_files/Zipf/811108812_926270801_223132457.mp4'
+file 'file:/home/shaun/PHYS_391B/presentation/media/videos/presentation/720p30/partial_movie_files/Zipf/1023302846_3062620383_3885392192.mp4'
+file 'file:/home/shaun/PHYS_391B/presentation/media/videos/presentation/720p30/partial_movie_files/Zipf/1023302846_125286499_3912588402.mp4'
