@@ -45,3 +45,12 @@ distance from centre. OpenCV2's [cv2.filter2D](https://docs.opencv.org/3.4/d4/db
 Next step is to apply the [Sobel operator](https://www.youtube.com/watch?v=uihBwtPIBxM) on the older data after retraining my model.\
 The main reason I think it is necessary to retrain the model is because the true positive reading was at the low end of 70% and it will
 form the basis of all of our investigative work into the growth projection "turing model" which we are developing, so it is probably best to not build on sand if at all avoidable.
+
+
+I am currently figuring out how to install the cuda dependencies for GPU based deep learning acceleration.
+Following Nvidia's [developer guide](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html):
+- I first had to install [CUDA toolkit](https://developer.nvidia.com/cuda-downloads)
+- Since I already had the current version of my nvidia dpu driver installed, I had to run the above .run file using:
+    `sudo sh ./cuda_11.7.1_515.65.01_linux.run --toolkit --silent --override` which seems to have worked fine.
+- Now, after downloading cudnn, I need to follow [these](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#installlinux-deb) steps.
+- Finally, I have to also install [tensorrt](https://docs.nvidia.com/deeplearning/tensorrt/archives/tensorrt-723/install-guide/index.html)
