@@ -54,5 +54,3 @@ Following Nvidia's [developer guide](https://docs.nvidia.com/deeplearning/cudnn/
     `sudo sh ./cuda_11.7.1_515.65.01_linux.run --toolkit --silent --override` which seems to have worked fine.
 - Now, after downloading cudnn, I need to follow [these](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#installlinux-deb) steps.
 - Finally, I have to also install [tensorrt](https://docs.nvidia.com/deeplearning/tensorrt/archives/tensorrt-723/install-guide/index.html)
-
-Presentation about this project is [here](https://docs.google.com/presentation/d/1ENszTtBydCILx1WD3F8z_XdElb5MGMuMWNx5A3TUKyM/edit?usp=sharing).
