@@ -1,30 +1,7 @@
 # PHYS_391B
+## All code used for my PHYS391 project, including manim animations.
 
-For now just using this to document my keras installation, since it is scary and I am scared.\
-Using this command to install appropriate NVIDIA driver for my rtx3060:\
-`sudo apt install nvidia-driver-470`
-
-
-Apparently the next step is to then go:\
-`sudo prime-select nvidia`
-
-
-Okay so it seems to have worked,running:\
-`nvidia-smi`
-
-produces:
-
-
-![Screenshot from 2022-09-27 15-06-20](https://user-images.githubusercontent.com/63687545/192414592-c6c52f35-4997-49cd-9355-6100b0bdca62.png)
-
-
-now I just need to follow the rest of [this](https://www.tensorflow.org/install/pip) guide.
-According to the guide, there may be some need to use the install link, which is:\
-`https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-2.10.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl`
-
-I used [the following link](https://data.linz.govt.nz/x/vGMekh) to download my data.
-
-List of installed (and required for my code) packages in the tf conda env:
+List of installed (and required for my code) packages in the project conda env:
 - Tensorflow
 - Keras (automatically installed with Tensorflow)
 - [pandas](https://pandas.pydata.org/docs/getting_started/install.html)
@@ -38,19 +15,10 @@ List of installed (and required for my code) packages in the tf conda env:
 - [opencv2](https://docs.opencv.org/4.x/d2/de6/tutorial_py_setup_in_ubuntu.html) (Their tutorial didn't work for me,
   use `conda install -c conda-forge opencv` instead.)
 
-I am currently working on using a kernel to apply the Zipf growth distribution to the image, rather than use an absolute
-distance from centre. OpenCV2's [cv2.filter2D](https://docs.opencv.org/3.4/d4/dbd/tutorial_filter_2d.html) should work well for this.
-
-
-Next step is to apply the [Sobel operator](https://www.youtube.com/watch?v=uihBwtPIBxM) on the older data after retraining my model.\
-The main reason I think it is necessary to retrain the model is because the true positive reading was at the low end of 70% and it will
-form the basis of all of our investigative work into the growth projection "turing model" which we are developing, so it is probably best to not build on sand if at all avoidable.
-
-
-I am currently figuring out how to install the cuda dependencies for GPU based deep learning acceleration.
+For installing the cuda dependencies for GPU based deep learning acceleration:
 Following Nvidia's [developer guide](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html):
-- I first had to install [CUDA toolkit](https://developer.nvidia.com/cuda-downloads)
+- First install [CUDA toolkit](https://developer.nvidia.com/cuda-downloads)
 - Since I already had the current version of my nvidia dpu driver installed, I had to run the above .run file using:
     `sudo sh ./cuda_11.7.1_515.65.01_linux.run --toolkit --silent --override` which seems to have worked fine.
-- Now, after downloading cudnn, I need to follow [these](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#installlinux-deb) steps.
-- Finally, I have to also install [tensorrt](https://docs.nvidia.com/deeplearning/tensorrt/archives/tensorrt-723/install-guide/index.html)
+- Now, after downloading cudnn, follow [these](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#installlinux-deb) steps.
+- Finally, install [tensorrt](https://docs.nvidia.com/deeplearning/tensorrt/archives/tensorrt-723/install-guide/index.html)
